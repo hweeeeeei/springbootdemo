@@ -19,14 +19,12 @@ public class ContentsController {
 
     @GetMapping("/findByUid")
     Object findByUid (@RequestParam("uid") Integer uid){
-        System.out.println("findByUid");
         return contentsService.findByUid(uid);
     }
 
     //http://localhost:8080/demo/contents/findAll
     @GetMapping("/findAll")
     Object findAll() {
-        System.out.println("+----------------------findAll");
         return contentsService.findAll();
     }
 

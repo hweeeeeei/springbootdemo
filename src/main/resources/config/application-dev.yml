@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:mysql://118.25.14.73:3306/MicroBlock?useSSL=false
+    username: root
+    password: mysql@@2018.
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+server:
+  port: 8080
+  servlet:
+    context-path: "/demo"
+
+
+logging:
+  # 在当前磁盘的根路径下创建spring文件夹下再创建log文件夹 ,默认使用 spring.log
+  path: /spring/log
+
+  # 级别 trace < debug < info < warn < error
