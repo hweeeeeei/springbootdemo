@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    #根据环境加载配置 (dev为测试环境，stg为正式环境)
+    active: dev
+
+
+mybatis:
+  mapper-locations: classpath:/mapping/*.xml
+
+server:
+  servlet:
+    context-path: "/demo"
