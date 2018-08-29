@@ -7,10 +7,9 @@
     <groupId>com.hw</groupId>
     <artifactId>SpringBootDemo</artifactId>
     <version>1.0-SNAPSHOT</version>
-
     <packaging>jar</packaging>
     <name>SpringBootDemo</name>
-    <url>http://maven.apache.org</url>
+    <!--<url>http://maven.apache.org</url>-->
 
     <!-- 依赖性 继承Spring Boot -->
     <parent>
@@ -66,13 +65,13 @@
             <artifactId>spring-boot-starter-logging</artifactId>
         </dependency>
 
-        <!-- 注解使代码简洁-->
-            <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>1.18.0</version>
-                <scope>provided</scope>
-            </dependency>
+        <!-- lombok注解使代码简洁 例如@Setting ，@Slf4j-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.0</version>
+            <scope>provided</scope>
+        </dependency>
 
     </dependencies>
 
@@ -85,8 +84,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
 
-            <!-- 加入maven插件“docker-maven-plugin” -->
-            <!-- 参考博客https://blog.csdn.net/caox_nazi/article/details/78366584 -->
+            <!-- 加入maven插件“docker-maven-plugin” 参考博客https://blog.csdn.net/caox_nazi/article/details/78366584-->
             <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
@@ -113,35 +111,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-
         <!--properties节点中设置docker镜像的前缀“springboot”-->
         <docker.image.prefix>springboot</docker.image.prefix>
-
     </properties>
 
-    <!-- 如果您使用.RELEASE版本，则不需要添加此配置-->
-    <!--<repositories>
-        <repository>
-            <id>spring-snapshots</id>
-            <url>https://repo.spring.io/snapshot</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>spring-milestones</id>
-            <url>https://repo.spring.io/milestone</url>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>spring-snapshots</id>
-            <url>https://repo.spring.io/snapshot</url>
-        </pluginRepository>
-        <pluginRepository>
-            <id>spring-milestones</id>
-            <url>https://repo.spring.io/milestone</url>
-        </pluginRepository>
-    </pluginRepositories>-->
 
 </project>
