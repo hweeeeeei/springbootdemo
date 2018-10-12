@@ -1,0 +1,14 @@
+
+
+docker搭建nginx+springboot集群
+https://www.cnblogs.com/tuifeideyouran/p/6592973.html
+
+
+ #运行
+ docker run
+ --name nginx-stg
+ -p 80:80
+ -v $PWD/www:/www
+ -v $PWD/conf/nginx.conf:/etc/nginx/nginx.conf
+ -v $PWD/logs:/wwwlogs
+ -d nginx:latest

@@ -6,7 +6,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 server:
-  port: 80
+  port: 10001
 
 logging:
   # 在当前磁盘的根路径下创建spring文件夹下再创建log文件夹 ,默认使用 spring.log
