@@ -17,7 +17,7 @@ public class UploadController {
     //跳转到 templates 目录下的 upload.html
     @PostMapping(value = "/upload.html")
     public String upload(){
-
+        System.out.println("upload.html");
         return "upload";
     }
 

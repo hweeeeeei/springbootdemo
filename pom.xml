@@ -84,7 +84,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
 
-            <!-- 加入maven插件“docker-maven-plugin” 参考博客https://blog.csdn.net/caox_nazi/article/details/78366584-->
+            <!-- 加入maven插件“docker-maven-plugin” 参考博客 https://blog.csdn.net/caox_nazi/article/details/78366584 -->
             <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>

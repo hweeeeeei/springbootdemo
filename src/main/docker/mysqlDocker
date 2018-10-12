@@ -5,7 +5,9 @@ mkdir logs
 # 创建data文件夹
 mkdir data
 
+#拉取镜像
 docker pull mysql:5.7
 
+#运行
 docker run -p 3306:3306 --name mymysql -v $PWD/logs:/logs -v $PWD/data:/var/lib/mysql
 -e MYSQL_ROOT_PASSWORD=mysql.*2018/ -d mysql:5.7
