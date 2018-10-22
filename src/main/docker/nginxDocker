@@ -5,10 +5,4 @@ https://www.cnblogs.com/tuifeideyouran/p/6592973.html
 
 
  #运行
- docker run
- --name nginx-stg
- -p 80:80
- -v $PWD/www:/www
- -v $PWD/conf/nginx.conf:/etc/nginx/nginx.conf
- -v $PWD/logs:/wwwlogs
- -d nginx:latest
+ubuntu@VM-248-241-ubuntu:~/app/nginx$  docker run  --name nginx-test -p 80:80 --link javademo1:springBootD1  -v $PWD/www:/www -v $PWD/conf/nginx.conf:/etc/nginx/nginx.conf -v $PWD/logs:/wwwlogs -d nginx:latest
