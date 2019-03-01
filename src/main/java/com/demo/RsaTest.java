@@ -2,9 +2,6 @@ package com.demo;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.tomcat.util.codec.binary.Base64;
-import org.apache.tomcat.util.security.MD5Encoder;
-import sun.misc.BASE64Encoder;
-import sun.security.provider.MD5;
 
 import javax.crypto.Cipher;
 import java.net.URLDecoder;
@@ -33,10 +30,10 @@ public class RsaTest {
 
     public static void main(String[] args) throws Exception {
         //生成公钥和私钥
-        genKeyPair();
+//        genKeyPair();
 
         //加密字符串
-        String message = "DC483E80A7A0BD9EF71D8CF973673924";
+        String message = "96E79218965EB72C92A549DD5A330112";
 
         //公钥
         keyMap.put(0, "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCsLdjNy/Z0XF6RlU6/8eKJOSw19pwNsgaznktl8KiQ52sEhuwBZLCUz1xay0NpI2b7XyaAQrt/sRFRksuArAm04oyR94T5+SQn0uLTAEvlGFGrBckHSlWt281pIe1QWA20u0tFpJBtlr3TMFx/EmKgpPw/nsh/y4HFUr9ghrjFPwIDAQAB");
